@@ -749,7 +749,8 @@
           "response": []
         }
       ],
-      "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d"
+      "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
+      "description": "ISO 20078-2:2019 Extended Vehicle (ExVe) APIs"
     }
   ],
   "variable": [
