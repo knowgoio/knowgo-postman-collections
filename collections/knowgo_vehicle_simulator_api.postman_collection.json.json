@@ -168,7 +168,8 @@
               "response": []
             }
           ],
-          "id": "e1eb4f82-b84c-4b3a-984b-915eaf7681fb"
+          "id": "e1eb4f82-b84c-4b3a-984b-915eaf7681fb",
+          "description": "Simulator Webhook APIs"
         },
         {
           "name": "start the simulated vehicle",
