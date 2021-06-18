@@ -96,7 +96,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"webhooks\": [\n        \"journey_begin\",\n        \"journey_end\"\n    ],\n    \"notificationUrl\": \"{{notificationUrl}}\"\n}",
+                  "raw": "{\n    \"webhooks\": [\n        \"automation_level_changed\",\n        \"journey_begin\",\n        \"journey_end\",\n        \"ignition_changed\",\n        \"harsh_acceleration\",\n        \"harsh_braking\"\n    ],\n    \"notificationUrl\": \"{{notificationUrl}}\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
