@@ -1126,7 +1126,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "delete a vehicle fleet",
           "id": "2a6c314a-b69c-4c69-bee3-86556c97f6cb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
