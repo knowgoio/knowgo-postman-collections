@@ -856,12 +856,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/highBeamStatuses"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
           },
           "response": [
             {
               "id": "82bedd90-4fe5-4175-a7b5-aa1b876fbd79",
-              "name": "get the changes in ignition status for a specific vehicle",
+              "name": "Ignition running",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
