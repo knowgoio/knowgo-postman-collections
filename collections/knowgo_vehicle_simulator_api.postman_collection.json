@@ -913,7 +913,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "get list of vehicles contained in the fleet",
           "id": "bc96a6b2-ced9-4a15-84d3-a8b3170acd05",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
