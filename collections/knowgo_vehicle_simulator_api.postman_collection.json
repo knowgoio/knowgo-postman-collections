@@ -994,7 +994,65 @@
             "header": [],
             "url": null
           },
-          "response": []
+          "response": [
+            {
+              "id": "e981ff1c-b2b3-4e1a-939c-62938464a04d",
+              "name": "get information about a specific vehicle within a fleet",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles/{{vehicleId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:33:26 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "182"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"AutoID\": 981,\n    \"DriverID\": 968,\n    \"Name\": \"KnowGo Vehicle Simulator\",\n    \"Year\": 2013,\n    \"VIN\": \"MCBHVN4S9DA764515\",\n    \"LicensePlate\": \"QIR-920\",\n    \"FuelCapacity\": \"40L\",\n    \"Odometer\": 76453.27,\n    \"PhotoUrls\": []\n}"
+            }
+          ]
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
