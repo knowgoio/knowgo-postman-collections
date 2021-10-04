@@ -1203,9 +1203,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/fleets"
           },
           "response": []
         }
