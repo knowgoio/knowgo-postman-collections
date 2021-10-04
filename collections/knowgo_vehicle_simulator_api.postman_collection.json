@@ -772,7 +772,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
           },
           "response": [
             {
@@ -834,7 +834,7 @@
             },
             {
               "id": "342fb5fc-01fd-47b1-84ba-ac22125ca466",
-              "name": "get the changes in headlamp status for a specific vehicle",
+              "name": "Headlamp on/off events",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
