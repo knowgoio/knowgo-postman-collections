@@ -756,7 +756,7 @@
       "name": "Fleet APIs",
       "item": [
         {
-          "name": "New Request",
+          "name": "get list of fleets available",
           "id": "10eb1afd-3913-424e-8924-69bd8bf1b598",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
