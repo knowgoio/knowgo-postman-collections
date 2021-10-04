@@ -986,6 +986,19 @@
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
           },
           "response": []
+        },
+        {
+          "name": "get the changes in high beam status for a specific vehicle Copy",
+          "id": "980deace-2857-4dff-b3b1-b4c3b4c6139b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/highBeamStatuses"
+          },
+          "response": []
         }
       ],
       "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
