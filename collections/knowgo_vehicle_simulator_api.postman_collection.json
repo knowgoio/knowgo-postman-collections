@@ -609,7 +609,7 @@
           ]
         },
         {
-          "name": "get the automation levels for a specific vehicle",
+          "name": "get the changes in automation levels for a specific vehicle",
           "id": "1fce05d3-11af-40c0-bb2c-6d615a2657f2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
