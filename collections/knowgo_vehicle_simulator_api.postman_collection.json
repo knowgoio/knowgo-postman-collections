@@ -927,7 +927,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
           },
           "response": []
         },
