@@ -913,6 +913,28 @@
           ]
         },
         {
+          "name": "create a new vehicle fleet",
+          "id": "81c8a579-ac07-4731-9db7-c8b217262a3f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/fleets"
+          },
+          "response": []
+        },
+        {
           "name": "delete a vehicle fleet",
           "id": "2a6c314a-b69c-4c69-bee3-86556c97f6cb",
           "protocolProfileBehavior": {
@@ -1195,28 +1217,6 @@
               "body": "Vehicle successfully removed from fleet"
             }
           ]
-        },
-        {
-          "name": "create a new vehicle fleet",
-          "id": "81c8a579-ac07-4731-9db7-c8b217262a3f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{exveBaseUrl}}/fleets"
-          },
-          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
