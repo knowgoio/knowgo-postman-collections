@@ -764,6 +764,77 @@
           ]
         },
         {
+          "name": "get the changes in door status for a specific vehicle Copy",
+          "id": "cc3af4c5-68eb-45ae-8636-f3a44307f9cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
+          },
+          "response": [
+            {
+              "id": "9aacb0ae-12a6-4255-8ed3-737366ee7276",
+              "name": "Door lock/unlock events",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:08:31 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "214"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"doorStatuses\": [\n        {\n            \"value\": \"all_unlocked\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": \"all_locked\",\n            \"timestamp\": \"2021-10-04T09:13:05.733125\"\n        },\n        {\n            \"value\": \"all_unlocked\",\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
           "name": "get the changes in headlamp status for a specific vehicle",
           "id": "000bcf5d-41ec-44c7-b4bf-e27fe315a0af",
           "protocolProfileBehavior": {
@@ -1139,77 +1210,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"windshieldWiperStatuses\": [\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": true,\n            \"timestamp\": \"2021-10-04T09:13:05.733125\"\n        },\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "get the changes in door status for a specific vehicle Copy",
-          "id": "cc3af4c5-68eb-45ae-8636-f3a44307f9cf",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
-          },
-          "response": [
-            {
-              "id": "9aacb0ae-12a6-4255-8ed3-737366ee7276",
-              "name": "Door lock/unlock events",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "access-control-allow-headers",
-                  "value": "*"
-                },
-                {
-                  "key": "date",
-                  "value": "Mon, 04 Oct 2021 08:08:31 GMT"
-                },
-                {
-                  "key": "access-control-allow-origin",
-                  "value": "*"
-                },
-                {
-                  "key": "access-control-allow-methods",
-                  "value": "DELETE, GET, PUT, POST, OPTIONS"
-                },
-                {
-                  "key": "content-length",
-                  "value": "214"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"doorStatuses\": [\n        {\n            \"value\": \"all_unlocked\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": \"all_locked\",\n            \"timestamp\": \"2021-10-04T09:13:05.733125\"\n        },\n        {\n            \"value\": \"all_unlocked\",\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        }\n    ]\n}"
             }
           ]
         }
