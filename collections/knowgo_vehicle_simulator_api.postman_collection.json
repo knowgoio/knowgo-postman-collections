@@ -842,7 +842,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "get information about a specific",
           "id": "07006c2b-9991-419d-865a-d5ccfb5f4678",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
