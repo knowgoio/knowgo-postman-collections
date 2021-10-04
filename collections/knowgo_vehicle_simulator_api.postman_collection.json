@@ -701,12 +701,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
           },
           "response": [
             {
               "id": "28b5fcd6-8f90-49be-8c11-d0a6dfac384b",
-              "name": "get the changes in door status for a specific vehicle",
+              "name": "Door lock/unlock events",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
