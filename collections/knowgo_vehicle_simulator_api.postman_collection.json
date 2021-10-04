@@ -935,7 +935,7 @@
           "response": []
         },
         {
-          "name": "create a new vehicle fleet Copy",
+          "name": "add vehicles to an existing fleet",
           "id": "f50cf86b-f1b3-4952-86ce-56a851ae139c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
