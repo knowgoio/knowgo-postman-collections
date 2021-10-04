@@ -1055,7 +1055,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "remove a specific vehicle from a fleet",
           "id": "c490aef1-6c41-483c-b26d-423c128f5dee",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
