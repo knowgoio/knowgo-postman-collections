@@ -1080,12 +1080,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/windshieldWiperStatuses"
           },
           "response": [
             {
               "id": "972d2a70-d14b-465c-887c-7304083f5125",
-              "name": "get the changes in windshield wiper status for a specific vehicle",
+              "name": "Wiper on/off events",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
