@@ -858,7 +858,65 @@
             "header": [],
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/highBeamStatuses"
           },
-          "response": []
+          "response": [
+            {
+              "id": "82bedd90-4fe5-4175-a7b5-aa1b876fbd79",
+              "name": "get the changes in ignition status for a specific vehicle",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:12:01 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "79"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ignitionStatuses\": [\n        {\n            \"value\": \"run\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        }\n    ]\n}"
+            }
+          ]
         },
         {
           "name": "get the odometer values for a specific vehicle",
