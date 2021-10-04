@@ -997,7 +997,7 @@
           "response": [
             {
               "id": "e981ff1c-b2b3-4e1a-939c-62938464a04d",
-              "name": "get information about a specific vehicle within a fleet",
+              "name": "Fleet vehicle details",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
@@ -1053,6 +1053,19 @@
               "body": "{\n    \"AutoID\": 981,\n    \"DriverID\": 968,\n    \"Name\": \"KnowGo Vehicle Simulator\",\n    \"Year\": 2013,\n    \"VIN\": \"MCBHVN4S9DA764515\",\n    \"LicensePlate\": \"QIR-920\",\n    \"FuelCapacity\": \"40L\",\n    \"Odometer\": 76453.27,\n    \"PhotoUrls\": []\n}"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "c490aef1-6c41-483c-b26d-423c128f5dee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
