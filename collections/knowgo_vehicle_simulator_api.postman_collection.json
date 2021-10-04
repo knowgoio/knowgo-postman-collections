@@ -96,7 +96,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"webhooks\": [\n        \"journey_begin\",\n        \"journey_end\"\n    ],\n    \"notificationUrl\": \"{{notificationUrl}}\"\n}",
+                  "raw": "{\n    \"webhooks\": [\n        \"automation_level_changed\",\n        \"journey_begin\",\n        \"journey_end\",\n        \"ignition_changed\",\n        \"harsh_acceleration\",\n        \"harsh_braking\"\n    ],\n    \"notificationUrl\": \"{{notificationUrl}}\"\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -491,65 +491,6 @@
           ]
         },
         {
-          "name": "get the accelerator pedal positions for a specific vehicle",
-          "id": "3d68b134-9ac8-41ba-b366-b7f18edefd3a",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
-          },
-          "response": [
-            {
-              "id": "9ef7f5b9-44e8-47c4-92cb-eb3497ad592c",
-              "name": "accelerator pedal positions",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "date",
-                  "value": "Sat, 22 May 2021 23:25:35 GMT"
-                },
-                {
-                  "key": "content-length",
-                  "value": "247"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"acceleratorPedalPositions\": [\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:17.028128\"\n        },\n        {\n            \"value\": 40,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:24.321141\"\n        },\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:32.368091\"\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
           "name": "get the available resources of a specific vehicle",
           "id": "2d37b6b5-478a-47b2-80c9-99b9741a11e2",
           "protocolProfileBehavior": {
@@ -609,24 +550,24 @@
           ]
         },
         {
-          "name": "get the odometer values for a specific vehicle",
-          "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
+          "name": "get the accelerator pedal positions for a specific vehicle",
+          "id": "3d68b134-9ac8-41ba-b366-b7f18edefd3a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
           },
           "response": [
             {
-              "id": "41c51855-233b-48af-bc53-98815b108612",
-              "name": "odometer readings",
+              "id": "9ef7f5b9-44e8-47c4-92cb-eb3497ad592c",
+              "name": "accelerator pedal positions",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
               },
               "status": "OK",
               "code": 200,
@@ -634,11 +575,11 @@
               "header": [
                 {
                   "key": "date",
-                  "value": "Sat, 22 May 2021 23:16:22 GMT"
+                  "value": "Sat, 22 May 2021 23:25:35 GMT"
                 },
                 {
                   "key": "content-length",
-                  "value": "440"
+                  "value": "247"
                 },
                 {
                   "key": "x-frame-options",
@@ -663,7 +604,388 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"odometers\": [\n        {\n            \"value\": 100,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:11.475946\"\n        },\n        {\n            \"value\": 100.01,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:13.453887\"\n        },\n        {\n            \"value\": 100.02,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:15.453928\"\n        },\n        {\n            \"value\": 100.03,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:17.453874\"\n        },\n        {\n            \"value\": 100.04,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:19.454095\"\n        },\n        {\n            \"value\": 100.05,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:21.454110\"\n        }\n    ]\n}"
+              "body": "{\n    \"acceleratorPedalPositions\": [\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:17.028128\"\n        },\n        {\n            \"value\": 40,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:24.321141\"\n        },\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:32.368091\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the changes in automation levels for a specific vehicle",
+          "id": "1fce05d3-11af-40c0-bb2c-6d615a2657f2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/automationLevels"
+          },
+          "response": [
+            {
+              "id": "d264cce8-012c-42c6-989f-aadc5598a00e",
+              "name": "automation levels",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/automationLevels"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:04:48 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "75"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"automationLevels\": [\n        {\n            \"level\": 1,\n            \"timestamp\": \"2021-10-04T09:13:16.105797\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the brake pedal positions for a specific vehicle",
+          "id": "8dac4ec9-f0f2-4c14-ac38-fb20fb499de8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
+          },
+          "response": []
+        },
+        {
+          "name": "get the changes in door status for a specific vehicle",
+          "id": "52ed02bc-9733-4a95-adf5-2da39f7e9ea8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
+          },
+          "response": [
+            {
+              "id": "28b5fcd6-8f90-49be-8c11-d0a6dfac384b",
+              "name": "Door lock/unlock events",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:08:31 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "214"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"doorStatuses\": [\n        {\n            \"value\": \"all_unlocked\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": \"all_locked\",\n            \"timestamp\": \"2021-10-04T09:13:05.733125\"\n        },\n        {\n            \"value\": \"all_unlocked\",\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the changes in fuel levels for a specific vehicle",
+          "id": "cc3af4c5-68eb-45ae-8636-f3a44307f9cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/fuelLevels"
+          },
+          "response": [
+            {
+              "id": "ae069914-7383-4c7e-86cd-fa0ff02f0f05",
+              "name": "Fuel levels",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/fuelLevels"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:16:26 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "88"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"fuelLevels\": [\n        {\n            \"value\": 99,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the changes in headlamp status for a specific vehicle",
+          "id": "000bcf5d-41ec-44c7-b4bf-e27fe315a0af",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
+          },
+          "response": [
+            {
+              "id": "342fb5fc-01fd-47b1-84ba-ac22125ca466",
+              "name": "Headlamp on/off events",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:09:48 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "192"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"headlampStatuses\": [\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": true,\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        },\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:13.638170\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the changes in high beam status for a specific vehicle",
+          "id": "4cf7dc0d-7fd3-4d62-b0bf-d4065736cb88",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/highBeamStatuses"
+          },
+          "response": []
+        },
+        {
+          "name": "get the changes in ignition status for a specific vehicle",
+          "id": "980deace-2857-4dff-b3b1-b4c3b4c6139b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
+          },
+          "response": [
+            {
+              "id": "82bedd90-4fe5-4175-a7b5-aa1b876fbd79",
+              "name": "Ignition running",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:12:01 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "79"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ignitionStatuses\": [\n        {\n            \"value\": \"run\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        }\n    ]\n}"
             }
           ]
         },
@@ -747,17 +1069,657 @@
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
           },
           "response": []
+        },
+        {
+          "name": "get the odometer values for a specific vehicle",
+          "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
+          },
+          "response": [
+            {
+              "id": "41c51855-233b-48af-bc53-98815b108612",
+              "name": "odometer readings",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Sat, 22 May 2021 23:16:22 GMT"
+                },
+                {
+                  "key": "content-length",
+                  "value": "440"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"odometers\": [\n        {\n            \"value\": 100,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:11.475946\"\n        },\n        {\n            \"value\": 100.01,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:13.453887\"\n        },\n        {\n            \"value\": 100.02,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:15.453928\"\n        },\n        {\n            \"value\": 100.03,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:17.453874\"\n        },\n        {\n            \"value\": 100.04,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:19.454095\"\n        },\n        {\n            \"value\": 100.05,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:21.454110\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the changes in parking brake status for a specific vehicle",
+          "id": "22e49a75-b9a8-4a86-8d0f-bd625b1ee0ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
+          },
+          "response": []
+        },
+        {
+          "name": "get the changes in windshield wiper status for a specific vehicle",
+          "id": "270011aa-d8f1-44db-b256-3001d5aeaf8d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/windshieldWiperStatuses"
+          },
+          "response": [
+            {
+              "id": "972d2a70-d14b-465c-887c-7304083f5125",
+              "name": "Wiper on/off events",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/windshieldWiperStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:15:09 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "199"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"windshieldWiperStatuses\": [\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": true,\n            \"timestamp\": \"2021-10-04T09:13:05.733125\"\n        },\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
       "description": "ISO 20078-2:2019 Extended Vehicle (ExVe) APIs"
+    },
+    {
+      "name": "Fleet APIs",
+      "item": [
+        {
+          "name": "get list of fleets available",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ca2200bb-cb9b-4513-8df9-eb916c3eab7f",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "// Save off the first accessible fleetId, there will only be 1\r",
+                  "// in most cases.\r",
+                  "pm.environment.set(\"fleetId\", jsonData[0].fleetId);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "10eb1afd-3913-424e-8924-69bd8bf1b598",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets"
+          },
+          "response": [
+            {
+              "id": "20b2ab39-3b59-4ee8-8b68-6de81412277e",
+              "name": "fleet IDs",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:25:00 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "17"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"fleetId\": 572\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "create a new vehicle fleet",
+          "id": "81c8a579-ac07-4731-9db7-c8b217262a3f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/fleets"
+          },
+          "response": []
+        },
+        {
+          "name": "get information about a specific vehicle fleet",
+          "id": "07006c2b-9991-419d-865a-d5ccfb5f4678",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+          },
+          "response": [
+            {
+              "id": "c538aacc-cbe6-41be-b0a9-8725ea979002",
+              "name": "Fleet with single vehicle",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:29:23 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "46"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"fleetId\": 572,\n    \"vehicles\": [\n        {\n            \"vehicleId\": 981\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "add vehicles to an existing fleet",
+          "id": "f50cf86b-f1b3-4952-86ce-56a851ae139c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+          },
+          "response": []
+        },
+        {
+          "name": "delete a vehicle fleet",
+          "id": "2a6c314a-b69c-4c69-bee3-86556c97f6cb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+          },
+          "response": [
+            {
+              "id": "d12c0719-d41e-4c38-9d18-68ea7b57114d",
+              "name": "Successful fleet deletion",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:37:00 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "26"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "text/plain; charset=utf-8"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Fleet successfully deleted"
+            }
+          ]
+        },
+        {
+          "name": "get list of vehicles contained in the fleet",
+          "id": "bc96a6b2-ced9-4a15-84d3-a8b3170acd05",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles"
+          },
+          "response": [
+            {
+              "id": "6c05125a-257a-4bf0-b8b9-a84f6c335ac2",
+              "name": "List of vehicles within the fleet",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:31:23 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "19"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"vehicleId\": 981\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "get information about a specific vehicle within a fleet",
+          "id": "1f2f30ec-4bd4-450b-8759-3e371a87b3c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles/{{vehicleId}}"
+          },
+          "response": [
+            {
+              "id": "e981ff1c-b2b3-4e1a-939c-62938464a04d",
+              "name": "Fleet vehicle details",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles/{{vehicleId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:33:26 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "182"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"AutoID\": 981,\n    \"DriverID\": 968,\n    \"Name\": \"KnowGo Vehicle Simulator\",\n    \"Year\": 2013,\n    \"VIN\": \"MCBHVN4S9DA764515\",\n    \"LicensePlate\": \"QIR-920\",\n    \"FuelCapacity\": \"40L\",\n    \"Odometer\": 76453.27,\n    \"PhotoUrls\": []\n}"
+            }
+          ]
+        },
+        {
+          "name": "remove a specific vehicle from a fleet",
+          "id": "c490aef1-6c41-483c-b26d-423c128f5dee",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles/{{vehicleId}}"
+          },
+          "response": [
+            {
+              "id": "f0b28567-1292-49c0-b00b-49259f4ae874",
+              "name": "Successful removal",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles/{{vehicleId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:35:02 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "39"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "text/plain; charset=utf-8"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Vehicle successfully removed from fleet"
+            }
+          ]
+        }
+      ],
+      "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
     }
   ],
+  "auth": {
+    "type": "bearer",
+    "bearer": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzM0MTgyNDYsImlhdCI6MTYzMzMzMTg0NiwiaXNzIjoiaHR0cHM6Ly9rbm93Z29pby5naXRodWIuY29tL2tub3dnby12ZWhpY2xlLXNpbXVsYXRvciIsImp0aSI6IjkyN2I4MzM5LTA1YTgtNTM1ZS05NzUxLWZlNmVmYzllNmMwNSIsInNjb3BlIjoic2ltdWxhdG9yOnJlYWQgc2ltdWxhdG9yOndyaXRlIHJhd19ldmVudHM6cmVhZCByYXdfZXZlbnRzOndyaXRlIG5vdGlmaWNhdGlvbnMgd2ViaG9va3MgZXh2ZS52ZWhpY2xlczpyZWFkIGV4dmUuZmxlZXRzOnJlYWQgZXh2ZS5mbGVldHM6d3JpdGUifQ.50WURZjB5H6qLgXIJkYPFZn9N8V-zna7RAeBeIGW6yg"
+    }
+  },
   "event": [
     {
       "listen": "prerequest",
       "script": {
-        "id": "f7955dad-fa3b-4391-8de2-d5da590f682a",
+        "id": "5082ac6d-7e4a-4ea0-8249-a6c40a4e9e01",
         "type": "text/javascript",
         "exec": [
           ""
@@ -767,7 +1729,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "1477deed-7593-4fda-9579-e6b0f2d25dc2",
+        "id": "0b6b4bef-130d-46ae-8211-1bc772dfa058",
         "type": "text/javascript",
         "exec": [
           ""
