@@ -1065,7 +1065,65 @@
             "header": [],
             "url": null
           },
-          "response": []
+          "response": [
+            {
+              "id": "f0b28567-1292-49c0-b00b-49259f4ae874",
+              "name": "remove a specific vehicle from a fleet",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles/{{vehicleId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:35:02 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "39"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "text/plain; charset=utf-8"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Vehicle successfully removed from fleet"
+            }
+          ]
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
