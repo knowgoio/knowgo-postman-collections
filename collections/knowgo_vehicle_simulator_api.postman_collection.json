@@ -764,7 +764,7 @@
           ]
         },
         {
-          "name": "get the changes in door status for a specific vehicle Copy",
+          "name": "get the changes in headlamp status for a specific vehicle",
           "id": "000bcf5d-41ec-44c7-b4bf-e27fe315a0af",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
