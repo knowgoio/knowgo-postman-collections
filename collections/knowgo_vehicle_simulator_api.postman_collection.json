@@ -491,65 +491,6 @@
           ]
         },
         {
-          "name": "get the accelerator pedal positions for a specific vehicle",
-          "id": "3d68b134-9ac8-41ba-b366-b7f18edefd3a",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
-          },
-          "response": [
-            {
-              "id": "9ef7f5b9-44e8-47c4-92cb-eb3497ad592c",
-              "name": "accelerator pedal positions",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "date",
-                  "value": "Sat, 22 May 2021 23:25:35 GMT"
-                },
-                {
-                  "key": "content-length",
-                  "value": "247"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"acceleratorPedalPositions\": [\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:17.028128\"\n        },\n        {\n            \"value\": 40,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:24.321141\"\n        },\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:32.368091\"\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
           "name": "get the available resources of a specific vehicle",
           "id": "2d37b6b5-478a-47b2-80c9-99b9741a11e2",
           "protocolProfileBehavior": {
@@ -605,6 +546,65 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"resources\": [\n        {\n            \"name\": \"acceleratorPedalPositions\",\n            \"version\": \"1.0\",\n            \"href\": \"http://localhost:8086/exve/vehicles/5678/acceleratorPedalPositions\"\n        },\n        {\n            \"name\": \"locations\",\n            \"version\": \"1.0\",\n            \"href\": \"http://localhost:8086/exve/vehicles/5678/locations\"\n        },\n        {\n            \"name\": \"odometers\",\n            \"version\": \"1.0\",\n            \"href\": \"http://localhost:8086/exve/vehicles/5678/odometers\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the accelerator pedal positions for a specific vehicle",
+          "id": "3d68b134-9ac8-41ba-b366-b7f18edefd3a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
+          },
+          "response": [
+            {
+              "id": "9ef7f5b9-44e8-47c4-92cb-eb3497ad592c",
+              "name": "accelerator pedal positions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Sat, 22 May 2021 23:25:35 GMT"
+                },
+                {
+                  "key": "content-length",
+                  "value": "247"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"acceleratorPedalPositions\": [\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:17.028128\"\n        },\n        {\n            \"value\": 40,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:24.321141\"\n        },\n        {\n            \"value\": 10,\n            \"units\": \"percent\",\n            \"timestamp\": \"2021-05-23T01:25:32.368091\"\n        }\n    ]\n}"
             }
           ]
         },
