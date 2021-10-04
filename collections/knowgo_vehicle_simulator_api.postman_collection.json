@@ -984,7 +984,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "get information about a specific vehicle within a fleet",
           "id": "1f2f30ec-4bd4-450b-8759-3e371a87b3c0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
