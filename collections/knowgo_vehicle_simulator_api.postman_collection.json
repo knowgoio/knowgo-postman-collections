@@ -919,6 +919,77 @@
           ]
         },
         {
+          "name": "get the changes in ignition status for a specific vehicle Copy",
+          "id": "22e49a75-b9a8-4a86-8d0f-bd625b1ee0ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
+          },
+          "response": [
+            {
+              "id": "7438a75b-f74d-4964-a553-7d91261b851a",
+              "name": "Ignition running",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:12:01 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "79"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ignitionStatuses\": [\n        {\n            \"value\": \"run\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
           "name": "get the odometer values for a specific vehicle",
           "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
           "protocolProfileBehavior": {
@@ -1057,77 +1128,6 @@
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
           },
           "response": []
-        },
-        {
-          "name": "get the changes in ignition status for a specific vehicle Copy",
-          "id": "22e49a75-b9a8-4a86-8d0f-bd625b1ee0ef",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
-          },
-          "response": [
-            {
-              "id": "7438a75b-f74d-4964-a553-7d91261b851a",
-              "name": "Ignition running",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/ignitionStatuses"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "access-control-allow-headers",
-                  "value": "*"
-                },
-                {
-                  "key": "date",
-                  "value": "Mon, 04 Oct 2021 08:12:01 GMT"
-                },
-                {
-                  "key": "access-control-allow-origin",
-                  "value": "*"
-                },
-                {
-                  "key": "access-control-allow-methods",
-                  "value": "DELETE, GET, PUT, POST, OPTIONS"
-                },
-                {
-                  "key": "content-length",
-                  "value": "79"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ignitionStatuses\": [\n        {\n            \"value\": \"run\",\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        }\n    ]\n}"
-            }
-          ]
         }
       ],
       "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
