@@ -1197,7 +1197,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "create a new vehicle fleet",
           "id": "81c8a579-ac07-4731-9db7-c8b217262a3f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
