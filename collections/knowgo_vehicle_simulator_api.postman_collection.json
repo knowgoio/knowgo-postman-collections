@@ -757,6 +757,21 @@
       "item": [
         {
           "name": "get list of fleets available",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ca2200bb-cb9b-4513-8df9-eb916c3eab7f",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "// Save off the first accessible vehicleId, there will only be 1\r",
+                  "// in most cases.\r",
+                  "pm.environment.set(\"fleetId\", jsonData[0].vehicleId);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "10eb1afd-3913-424e-8924-69bd8bf1b598",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -764,12 +779,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "{{exveBaseUrl}}/fleets"
           },
           "response": [
             {
               "id": "20b2ab39-3b59-4ee8-8b68-6de81412277e",
-              "name": "New Request",
+              "name": "fleet IDs",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
