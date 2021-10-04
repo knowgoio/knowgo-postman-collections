@@ -855,7 +855,7 @@
           "response": [
             {
               "id": "c538aacc-cbe6-41be-b0a9-8725ea979002",
-              "name": "New Request",
+              "name": "Fleet with single vehicle",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
@@ -911,6 +911,19 @@
               "body": "{\n    \"fleetId\": 572,\n    \"vehicles\": [\n        {\n            \"vehicleId\": 981\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "bc96a6b2-ced9-4a15-84d3-a8b3170acd05",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
