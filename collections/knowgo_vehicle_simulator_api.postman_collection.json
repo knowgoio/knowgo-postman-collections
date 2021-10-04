@@ -1132,14 +1132,14 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
-            "url": null
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
           },
           "response": [
             {
               "id": "d12c0719-d41e-4c38-9d18-68ea7b57114d",
-              "name": "delete a vehicle fleet",
+              "name": "Successful fleet deletion",
               "originalRequest": {
                 "method": "DELETE",
                 "header": [],
