@@ -693,7 +693,7 @@
           "response": []
         },
         {
-          "name": "get the brake pedal positions for a specific vehicle Copy",
+          "name": "get the changes in door status for a specific vehicle",
           "id": "52ed02bc-9733-4a95-adf5-2da39f7e9ea8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
