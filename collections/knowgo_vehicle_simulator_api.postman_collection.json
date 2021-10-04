@@ -919,7 +919,7 @@
           ]
         },
         {
-          "name": "get the changes in ignition status for a specific vehicle Copy",
+          "name": "get the changes in parking brake status for a specific vehicle",
           "id": "22e49a75-b9a8-4a86-8d0f-bd625b1ee0ef",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
