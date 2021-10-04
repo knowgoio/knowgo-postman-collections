@@ -693,6 +693,19 @@
           "response": []
         },
         {
+          "name": "get the brake pedal positions for a specific vehicle Copy",
+          "id": "52ed02bc-9733-4a95-adf5-2da39f7e9ea8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
+          },
+          "response": []
+        },
+        {
           "name": "get the odometer values for a specific vehicle",
           "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
           "protocolProfileBehavior": {
@@ -829,19 +842,6 @@
               }
             },
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
-          },
-          "response": []
-        },
-        {
-          "name": "get the brake pedal positions for a specific vehicle Copy",
-          "id": "52ed02bc-9733-4a95-adf5-2da39f7e9ea8",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
           },
           "response": []
         }
