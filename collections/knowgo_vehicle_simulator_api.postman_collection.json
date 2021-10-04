@@ -913,6 +913,77 @@
           ]
         },
         {
+          "name": "delete a vehicle fleet",
+          "id": "2a6c314a-b69c-4c69-bee3-86556c97f6cb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+          },
+          "response": [
+            {
+              "id": "d12c0719-d41e-4c38-9d18-68ea7b57114d",
+              "name": "Successful fleet deletion",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 07:37:00 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "26"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "text/plain; charset=utf-8"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Fleet successfully deleted"
+            }
+          ]
+        },
+        {
           "name": "get list of vehicles contained in the fleet",
           "id": "bc96a6b2-ced9-4a15-84d3-a8b3170acd05",
           "protocolProfileBehavior": {
@@ -1122,77 +1193,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "Vehicle successfully removed from fleet"
-            }
-          ]
-        },
-        {
-          "name": "delete a vehicle fleet",
-          "id": "2a6c314a-b69c-4c69-bee3-86556c97f6cb",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
-          },
-          "response": [
-            {
-              "id": "d12c0719-d41e-4c38-9d18-68ea7b57114d",
-              "name": "Successful fleet deletion",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [],
-                "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "plain",
-              "header": [
-                {
-                  "key": "access-control-allow-headers",
-                  "value": "*"
-                },
-                {
-                  "key": "date",
-                  "value": "Mon, 04 Oct 2021 07:37:00 GMT"
-                },
-                {
-                  "key": "access-control-allow-origin",
-                  "value": "*"
-                },
-                {
-                  "key": "access-control-allow-methods",
-                  "value": "DELETE, GET, PUT, POST, OPTIONS"
-                },
-                {
-                  "key": "content-length",
-                  "value": "26"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "text/plain; charset=utf-8"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "Fleet successfully deleted"
             }
           ]
         }
