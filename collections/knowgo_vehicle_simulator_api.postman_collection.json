@@ -609,19 +609,6 @@
           ]
         },
         {
-          "name": "get the brake pedal positions for a specific vehicle",
-          "id": "8dac4ec9-f0f2-4c14-ac38-fb20fb499de8",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
-          },
-          "response": []
-        },
-        {
           "name": "get the changes in automation levels for a specific vehicle",
           "id": "1fce05d3-11af-40c0-bb2c-6d615a2657f2",
           "protocolProfileBehavior": {
@@ -691,6 +678,19 @@
               "body": "{\n    \"automationLevels\": [\n        {\n            \"level\": 1,\n            \"timestamp\": \"2021-10-04T09:13:16.105797\"\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "name": "get the brake pedal positions for a specific vehicle",
+          "id": "8dac4ec9-f0f2-4c14-ac38-fb20fb499de8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
+          },
+          "response": []
         },
         {
           "name": "get the odometer values for a specific vehicle",
