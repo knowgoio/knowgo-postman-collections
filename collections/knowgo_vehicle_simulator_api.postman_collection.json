@@ -978,6 +978,28 @@
           ]
         },
         {
+          "name": "send a notification to a specific vehicle",
+          "id": "d1ddbd40-48bc-47ac-9488-ae44e1c3ad27",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"text\": \"Example notification\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
+          },
+          "response": []
+        },
+        {
           "name": "get the odometer values for a specific vehicle",
           "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
           "protocolProfileBehavior": {
@@ -1035,28 +1057,6 @@
               "body": "{\n    \"odometers\": [\n        {\n            \"value\": 100,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:11.475946\"\n        },\n        {\n            \"value\": 100.01,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:13.453887\"\n        },\n        {\n            \"value\": 100.02,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:15.453928\"\n        },\n        {\n            \"value\": 100.03,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:17.453874\"\n        },\n        {\n            \"value\": 100.04,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:19.454095\"\n        },\n        {\n            \"value\": 100.05,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:21.454110\"\n        }\n    ]\n}"
             }
           ]
-        },
-        {
-          "name": "send a notification to a specific vehicle",
-          "id": "d1ddbd40-48bc-47ac-9488-ae44e1c3ad27",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"text\": \"Example notification\"\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
-          },
-          "response": []
         },
         {
           "name": "get the changes in parking brake status for a specific vehicle",
