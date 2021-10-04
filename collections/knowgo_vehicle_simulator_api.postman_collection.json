@@ -609,7 +609,7 @@
           ]
         },
         {
-          "name": "get the accelerator pedal positions for a specific vehicle Copy",
+          "name": "get the brake pedal positions for a specific vehicle",
           "id": "8dac4ec9-f0f2-4c14-ac38-fb20fb499de8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
