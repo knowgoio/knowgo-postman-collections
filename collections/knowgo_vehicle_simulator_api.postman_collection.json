@@ -835,77 +835,6 @@
           ]
         },
         {
-          "name": "get the changes in headlamp status for a specific vehicle Copy",
-          "id": "4cf7dc0d-7fd3-4d62-b0bf-d4065736cb88",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
-          },
-          "response": [
-            {
-              "id": "2d777f50-2f48-4f4b-893e-c6357f28d000",
-              "name": "Headlamp on/off events",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "access-control-allow-headers",
-                  "value": "*"
-                },
-                {
-                  "key": "date",
-                  "value": "Mon, 04 Oct 2021 08:09:48 GMT"
-                },
-                {
-                  "key": "access-control-allow-origin",
-                  "value": "*"
-                },
-                {
-                  "key": "access-control-allow-methods",
-                  "value": "DELETE, GET, PUT, POST, OPTIONS"
-                },
-                {
-                  "key": "content-length",
-                  "value": "192"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"headlampStatuses\": [\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": true,\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        },\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:13.638170\"\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
           "name": "get the odometer values for a specific vehicle",
           "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
           "protocolProfileBehavior": {
@@ -1044,6 +973,77 @@
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
           },
           "response": []
+        },
+        {
+          "name": "get the changes in headlamp status for a specific vehicle Copy",
+          "id": "4cf7dc0d-7fd3-4d62-b0bf-d4065736cb88",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
+          },
+          "response": [
+            {
+              "id": "2d777f50-2f48-4f4b-893e-c6357f28d000",
+              "name": "Headlamp on/off events",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:09:48 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "192"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"headlampStatuses\": [\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": true,\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        },\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:13.638170\"\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
