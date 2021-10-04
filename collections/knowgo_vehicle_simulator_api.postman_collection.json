@@ -772,7 +772,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/doorStatuses"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/fuelLevels"
           },
           "response": [
             {
