@@ -921,12 +921,12 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}/vehicles"
           },
           "response": [
             {
               "id": "6c05125a-257a-4bf0-b8b9-a84f6c335ac2",
-              "name": "get list of vehicles contained in the fleet",
+              "name": "List of vehicles within the fleet",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
