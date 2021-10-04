@@ -842,6 +842,28 @@
           ]
         },
         {
+          "name": "create a new vehicle fleet",
+          "id": "81c8a579-ac07-4731-9db7-c8b217262a3f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/fleets"
+          },
+          "response": []
+        },
+        {
           "name": "get information about a specific vehicle fleet",
           "id": "07006c2b-9991-419d-865a-d5ccfb5f4678",
           "protocolProfileBehavior": {
@@ -911,28 +933,6 @@
               "body": "{\n    \"fleetId\": 572,\n    \"vehicles\": [\n        {\n            \"vehicleId\": 981\n        }\n    ]\n}"
             }
           ]
-        },
-        {
-          "name": "create a new vehicle fleet",
-          "id": "81c8a579-ac07-4731-9db7-c8b217262a3f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{exveBaseUrl}}/fleets"
-          },
-          "response": []
         },
         {
           "name": "add vehicles to an existing fleet",
