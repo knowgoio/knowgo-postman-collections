@@ -919,65 +919,6 @@
           ]
         },
         {
-          "name": "get the odometer values for a specific vehicle",
-          "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
-          },
-          "response": [
-            {
-              "id": "41c51855-233b-48af-bc53-98815b108612",
-              "name": "odometer readings",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "date",
-                  "value": "Sat, 22 May 2021 23:16:22 GMT"
-                },
-                {
-                  "key": "content-length",
-                  "value": "440"
-                },
-                {
-                  "key": "x-frame-options",
-                  "value": "SAMEORIGIN"
-                },
-                {
-                  "key": "content-type",
-                  "value": "application/json"
-                },
-                {
-                  "key": "x-xss-protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "x-content-type-options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "server",
-                  "value": "dart:io with Shelf"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"odometers\": [\n        {\n            \"value\": 100,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:11.475946\"\n        },\n        {\n            \"value\": 100.01,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:13.453887\"\n        },\n        {\n            \"value\": 100.02,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:15.453928\"\n        },\n        {\n            \"value\": 100.03,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:17.453874\"\n        },\n        {\n            \"value\": 100.04,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:19.454095\"\n        },\n        {\n            \"value\": 100.05,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:21.454110\"\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
           "name": "get the locations for a specific vehicle",
           "id": "9bf3fa85-6409-49e1-9e4c-d2c40349f5b4",
           "protocolProfileBehavior": {
@@ -1033,6 +974,65 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"locations\": [\n        {\n            \"latitude\": 48.0202599980004,\n            \"longitude\": 11.58485,\n            \"timestamp\": \"2021-05-23T00:40:38.966841\"\n        },\n        {\n            \"latitude\": 48.020279338612276,\n            \"longitude\": 11.58485,\n            \"timestamp\": \"2021-05-23T00:40:39.956793\"\n        },\n        {\n            \"latitude\": 48.020307409408765,\n            \"longitude\": 11.58485,\n            \"timestamp\": \"2021-05-23T00:40:40.955879\"\n        },\n        {\n            \"latitude\": 48.0203436381088,\n            \"longitude\": 11.58485,\n            \"timestamp\": \"2021-05-23T00:40:41.955864\"\n        },\n        {\n            \"latitude\": 48.02038748994549,\n            \"longitude\": 11.58485,\n            \"timestamp\": \"2021-05-23T00:40:42.956003\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "get the odometer values for a specific vehicle",
+          "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
+          },
+          "response": [
+            {
+              "id": "41c51855-233b-48af-bc53-98815b108612",
+              "name": "odometer readings",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/odometers"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Sat, 22 May 2021 23:16:22 GMT"
+                },
+                {
+                  "key": "content-length",
+                  "value": "440"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"odometers\": [\n        {\n            \"value\": 100,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:11.475946\"\n        },\n        {\n            \"value\": 100.01,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:13.453887\"\n        },\n        {\n            \"value\": 100.02,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:15.453928\"\n        },\n        {\n            \"value\": 100.03,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:17.453874\"\n        },\n        {\n            \"value\": 100.04,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:19.454095\"\n        },\n        {\n            \"value\": 100.05,\n            \"units\": \"km\",\n            \"timestamp\": \"2021-05-23T01:16:21.454110\"\n        }\n    ]\n}"
             }
           ]
         },
