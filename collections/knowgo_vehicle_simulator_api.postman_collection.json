@@ -843,7 +843,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/headlampStatuses"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/highBeamStatuses"
           },
           "response": [
             {
