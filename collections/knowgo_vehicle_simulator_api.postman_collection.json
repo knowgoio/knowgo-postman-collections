@@ -1082,7 +1082,65 @@
             "header": [],
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
           },
-          "response": []
+          "response": [
+            {
+              "id": "972d2a70-d14b-465c-887c-7304083f5125",
+              "name": "get the changes in windshield wiper status for a specific vehicle",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/windshieldWiperStatuses"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "access-control-allow-headers",
+                  "value": "*"
+                },
+                {
+                  "key": "date",
+                  "value": "Mon, 04 Oct 2021 08:15:09 GMT"
+                },
+                {
+                  "key": "access-control-allow-origin",
+                  "value": "*"
+                },
+                {
+                  "key": "access-control-allow-methods",
+                  "value": "DELETE, GET, PUT, POST, OPTIONS"
+                },
+                {
+                  "key": "content-length",
+                  "value": "199"
+                },
+                {
+                  "key": "x-frame-options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "x-xss-protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "x-content-type-options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "server",
+                  "value": "dart:io with Shelf"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"windshieldWiperStatuses\": [\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:01.753075\"\n        },\n        {\n            \"value\": true,\n            \"timestamp\": \"2021-10-04T09:13:05.733125\"\n        },\n        {\n            \"value\": false,\n            \"timestamp\": \"2021-10-04T09:13:10.527144\"\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
