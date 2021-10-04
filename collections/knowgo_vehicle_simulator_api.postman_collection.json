@@ -1124,6 +1124,19 @@
               "body": "Vehicle successfully removed from fleet"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "2a6c314a-b69c-4c69-bee3-86556c97f6cb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
