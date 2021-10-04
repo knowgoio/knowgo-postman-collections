@@ -1072,7 +1072,7 @@
           "response": []
         },
         {
-          "name": "get the changes in parking brake status for a specific vehicle Copy",
+          "name": "get the changes in windshield wiper status for a specific vehicle",
           "id": "270011aa-d8f1-44db-b256-3001d5aeaf8d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
