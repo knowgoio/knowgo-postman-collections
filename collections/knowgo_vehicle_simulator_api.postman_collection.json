@@ -840,6 +840,19 @@
               "body": "[\n    {\n        \"fleetId\": 572\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "07006c2b-9991-419d-865a-d5ccfb5f4678",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
