@@ -1217,6 +1217,28 @@
               "body": "Vehicle successfully removed from fleet"
             }
           ]
+        },
+        {
+          "name": "create a new vehicle fleet Copy",
+          "id": "f50cf86b-f1b3-4952-86ce-56a851ae139c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"vehicleId\": {{vehicleId}}\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{exveBaseUrl}}/fleets"
+          },
+          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
