@@ -919,19 +919,6 @@
           ]
         },
         {
-          "name": "get the changes in parking brake status for a specific vehicle",
-          "id": "22e49a75-b9a8-4a86-8d0f-bd625b1ee0ef",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
-          },
-          "response": []
-        },
-        {
           "name": "get the odometer values for a specific vehicle",
           "id": "f61ce124-a7c8-455c-89b8-dae7e4a3c3e0",
           "protocolProfileBehavior": {
@@ -1068,6 +1055,19 @@
               }
             },
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/notification"
+          },
+          "response": []
+        },
+        {
+          "name": "get the changes in parking brake status for a specific vehicle",
+          "id": "22e49a75-b9a8-4a86-8d0f-bd625b1ee0ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
           },
           "response": []
         }
