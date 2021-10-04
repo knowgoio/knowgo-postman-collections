@@ -850,7 +850,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "{{exveBaseUrl}}/fleets/{{fleetId}}"
           },
           "response": [
             {
