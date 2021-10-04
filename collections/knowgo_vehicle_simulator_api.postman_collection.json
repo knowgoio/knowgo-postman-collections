@@ -842,7 +842,7 @@
           ]
         },
         {
-          "name": "get information about a specific",
+          "name": "get information about a specific vehicle fleet",
           "id": "07006c2b-9991-419d-865a-d5ccfb5f4678",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
