@@ -764,7 +764,7 @@
           ]
         },
         {
-          "name": "get the changes in door status for a specific vehicle Copy",
+          "name": "get the changes in fuel levels for a specific vehicle",
           "id": "cc3af4c5-68eb-45ae-8636-f3a44307f9cf",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
