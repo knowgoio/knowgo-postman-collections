@@ -754,7 +754,21 @@
     },
     {
       "name": "Fleet APIs",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "10eb1afd-3913-424e-8924-69bd8bf1b598",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
     }
   ],
