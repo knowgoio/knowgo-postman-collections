@@ -617,7 +617,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/acceleratorPedalPositions"
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/brakePedalPositions"
           },
           "response": [
             {
