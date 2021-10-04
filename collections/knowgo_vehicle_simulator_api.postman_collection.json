@@ -982,6 +982,19 @@
               "body": "[\n    {\n        \"vehicleId\": 981\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "New Request",
+          "id": "1f2f30ec-4bd4-450b-8759-3e371a87b3c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
