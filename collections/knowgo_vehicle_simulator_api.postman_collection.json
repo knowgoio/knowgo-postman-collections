@@ -1070,6 +1070,19 @@
             "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
           },
           "response": []
+        },
+        {
+          "name": "get the changes in parking brake status for a specific vehicle Copy",
+          "id": "270011aa-d8f1-44db-b256-3001d5aeaf8d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{exveBaseUrl}}/vehicles/{{vehicleId}}/parkingBrakeStatuses"
+          },
+          "response": []
         }
       ],
       "id": "31eb498b-144e-4ddc-b732-1ce4d59a0f5d",
