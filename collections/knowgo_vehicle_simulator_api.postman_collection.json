@@ -764,9 +764,9 @@
                 "id": "ca2200bb-cb9b-4513-8df9-eb916c3eab7f",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
-                  "// Save off the first accessible vehicleId, there will only be 1\r",
+                  "// Save off the first accessible fleetId, there will only be 1\r",
                   "// in most cases.\r",
-                  "pm.environment.set(\"fleetId\", jsonData[0].vehicleId);"
+                  "pm.environment.set(\"fleetId\", jsonData[0].fleetId);"
                 ],
                 "type": "text/javascript"
               }
