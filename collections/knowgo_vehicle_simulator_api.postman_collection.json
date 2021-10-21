@@ -1706,7 +1706,8 @@
           ]
         }
       ],
-      "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea"
+      "id": "6c6d835d-edd4-4bee-8877-bd171eb7e2ea",
+      "description": "Vehicle fleet management APIs"
     }
   ],
   "auth": {
